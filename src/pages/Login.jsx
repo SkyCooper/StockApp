@@ -28,7 +28,7 @@ const Login = () => {
       >
         <Grid item xs={12} mb={3}>
           <Typography variant="h3" color="primary" align="center">
-            STOCK APP
+          @cooper STOCK APP
           </Typography>
         </Grid>
 
@@ -61,6 +61,8 @@ const Login = () => {
               actions.setSubmitting(false);
             }}
             component={(props) => <LoginForm {...props} />}
+            //? login form kod kalabalığını önlemek için formik, component probu kullanılarak ayrı bir Component olarak yapıldı.
+            //? rc24-formik dersinden bakılabilir, orada ayrılmadan yerinde yazılmıştı.
           ></Formik>
           <Box sx={{ textAlign: "center", mt: 2 }}>
             <Link to="/register">Do you have not an account?</Link>
@@ -68,7 +70,7 @@ const Login = () => {
         </Grid>
 
         <Grid item xs={10} sm={7} md={6}>
-          <Container>
+          <Container >
             <img src={image} alt="img" />
           </Container>
         </Grid>

@@ -58,9 +58,9 @@ const icons = [
 
 const iconStyle = {
   color: "#eee",
-  "& .MuiSvgIcon-root": { color: "#eee" },
-  "&:hover": { color: "red" },
-  "&:hover .MuiSvgIcon-root": { color: "red" },
+  "& .MuiSvgIcon-root": { color: "#000000" },
+  "&:hover": { color: "#E74C3C" },
+  "&:hover .MuiSvgIcon-root": { color: "#E74C3C" },
 };
 
 const MenuListItems = () => {
@@ -70,12 +70,14 @@ const MenuListItems = () => {
       <List>
         {icons?.map((item, index) => (
           <ListItem key={index} disablePadding>
+            {/* //! koşullandırmalı yazılım, url harici link ise; to=item.url ile yönlendirme */}
             {item.url.includes("http") && (
               <ListItemButton to={item.url} sx={iconStyle}>
                 <ListItemIcon>{item.icon}</ListItemIcon>
                 <ListItemText primary={item.title} />
               </ListItemButton>
             )}
+            {/* //! koşullandırmalı yazılım, url harici değil ise; onClick ve navigate ile yönlendirme */}
             {!item.url.includes("http") && (
               <ListItemButton onClick={() => navigate(item.url)} sx={iconStyle}>
                 <ListItemIcon>{item.icon}</ListItemIcon>

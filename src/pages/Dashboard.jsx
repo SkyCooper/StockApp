@@ -48,6 +48,7 @@ function Dashboard(props) {
         sx={{
           width: { sm: `calc(100% - ${drawerWidth}px)` },
           ml: { sm: `${drawerWidth}px` },
+          background: "#E74C3C",
         }}
       >
         <Toolbar>
@@ -62,7 +63,7 @@ function Dashboard(props) {
           </IconButton>
           {/* //? flexGrow ile yazılar ikiyana açıldı. */}
           <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
-            Stock App
+            @cooper Stock App
           </Typography>
           {currentUser && (
             <Button color="inherit" onClick={() => logout()}>
@@ -95,7 +96,7 @@ function Dashboard(props) {
           //? arkaplan rengi için PaperProps kullanılıyor.
           PaperProps={{
             sx: {
-              backgroundColor: blueGrey[900],
+              backgroundColor: blueGrey[600],
             },
           }}
         >
@@ -113,7 +114,7 @@ function Dashboard(props) {
           //? arkaplan rengi için PaperProps kullanılıyor.
           PaperProps={{
             sx: {
-              backgroundColor: blueGrey[900],
+              backgroundColor: blueGrey[600],
             },
           }}
           open
