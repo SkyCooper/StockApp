@@ -1,0 +1,23 @@
+başlamadan önce bu adrese git,
+https://console-13673.fullstack.clarusway.com/
+
+şifre :
+dancersoftaranto@gmail.com
+
+daha sonra;
+SERVER : ACTIVE olması lazım değlse aktif et.
+
+yoksa çalışmaz.
+
+canlı link için login;
+cooper@sky.com
+Cooper123.
+
+https://console-13673.fullstack.clarusway.com/admin  linkine git
+username : admin
+password : admin
+
+girdikten sonra  Users;
+oradan da coopersky veya hangi username ile önceden register olunmuşsa onun yetkisini manager yap.
+
+
